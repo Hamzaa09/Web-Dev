@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cara - An E-commerce Site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- header  -->
+    <section id="header">
+        <div class="logo">
+            <a href="index.html"><img src="img/logo.png" alt="#"></a>
+        </div>
+
+        <div class="items">
+            <ul id="navbar">
+                <a href="#"><i id="close-icon" class="fa-solid fa-xmark"></i></a>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a class="active" href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+            </ul>
+
+            <div class="mobile">
+                <a><i class="fa-solid fa-bag-shopping"></i></a>
+                <i id="bar" class="fas fa-outdent"></i>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- banner -->
+    <section id="blog-banner" style="background-image: url('img/about/banner.png')">
+        <h2>#cart</h2>
+        <p>Get Coupons & SAVE upto 70%!!</p>
+    </section>
+
+    <!-- order-table -->
+    <section id="order-table" class="section-p1 section-m1">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <th>Remove</th>
+                    <th>Image</th>
+                    <th>Product</th>
+                    <th>Prices</th>
+                    <th>Quantity</th>
+                    <th>Sub-total</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+    </section>
+
+    <!-- coupond & cards -->
+    <section id="coupons-cards" class="section-m1">
+        <div class="coupons section-p1">
+            <h4>Apply Coupons</h4>
+            <div class="c-inp">
+                <input type="text" placeholder="Enter your coupon">
+                <button class="normal-btn" onclick="couponAlert()">Apply</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- news letter -->
+    <section id="news-letter" class="section-p1 section-m1">
+        <div class="nl-container-1">
+            <h4>Sign Up For Newsletters</h4>
+            <p>Get latest updates about our latest products and <a href="#">special offers</a></p>
+        </div>
+        <div class="nl-container-2">
+            <input type="text" placeholder="Enter your e-mail">
+            <button class="normal-btn">Sign Up</button>
+        </div>
+    </section>
+
+    <!-- footer  -->
+    <footer class="section-m1">
+        <div class="col-parent section-p1">
+            <div class="col">
+                <img src="img/logo.png" alt="">
+                <h4>Contact</h4>
+
+                <div class="info">
+                    <p><strong>Address: </strong>Street no xyz, Abc Road, Pakistan</p>
+                    <p><strong>Phone: </strong>(+92)345678912, (+92)398745612</p>
+                    <p><strong>Hours: </strong>9:00 - 6:00 PM, MON-Fri</p>
+                </div>
+
+                <h4>Follow Us</h4>
+                <div class="icons">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-github"></i>
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+            <div class="col">
+                <h4>About</h4>
+                <a href="#">About Us</a>
+                <a href="#">Delivery Information</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+            </div>
+            <div class="col">
+                <h4>My Account</h4>
+                <a href="#">Sign In</a>
+                <a href="#">View Cart</a>
+                <a href="#">My Wallet</a>
+                <a href="#">Track My Order</a>
+                <a href="#">Help</a>
+            </div>
+            <div class="col">
+                <h4>Install Apps</h4>
+                <p>From App store or Google play</p>
+                <div class="apps-img">
+                    <img width="130px" src="img/pay/app.jpg" alt="">
+                    <img width="130px" src="img/pay/play.jpg" alt="">
+                </div>
+                <p>Payment Options</p>
+                <img src="img/pay/pay.png" alt="">
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>© 2024, Hamza & Co.</p>
+        </div>
+    </footer>
+</body>
+
+    <!-- fonts -->
+    <script src="https://kit.fontawesome.com/fb70d785df.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+</html>
