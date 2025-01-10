@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Outfit&family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #1a1a1a;
+}
+
+.card{
+    width: 90%;
+    max-width: 500px;
+    max-height: 70vh;
+    background: rgba(255, 255, 255, 0.973);
+    margin: 100px auto;
+    text-align: center;
+    padding: 40px 30px;
+    border-radius: 10px;
+    overflow-y: hidden;
+}
+
+.card h4 img{
+    width: 30px;
+    height: 30px;
+    margin: 0 0 -5px 5px;
+}
+
+.card h4{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.card .search-part{
+    display: flex;
+    justify-content: space-between;
+    background-color: #edeef0;
+    border-radius: 30px;
+    margin-bottom: 10px;
+}
+
+.search-part input{
+    width: 100%;
+    padding: 16px 20px;
+    outline: none;
+    border: 0px solid transparent;
+    font-size: 16px; 
+    background-color: #edeef0;
+    border-radius: 30px;
+}
+
+.search-part button{
+    border-radius: 30px;
+    font-size: 16px; 
+    background-color: #FF5945;
+    color: white;
+    border: 0px solid transparent;
+    padding: 16px 40px;
+    cursor: pointer;
+    text-align: center;
+    user-select: none;
+}
+
+.search-part button:hover{
+    opacity: 0.9;
+}
+
+.data{
+    overflow-y: scroll;
+    max-height: 70vh;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+.data ul li{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 10px 12px 50px; 
+    font-size: 17px;
+    cursor: pointer;
+    text-align: left;
+    word-wrap: break-word ;
+    user-select: none;
+    position: relative;
+}
+
+.data ul li::before{
+    content: "";
+    background: url("images/unchecked.png") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 12px;
+    left: 8px;
+}
+
+ul li.active{
+    color: #555;
+    text-decoration:line-through;
+}
+
+ul li.active::before{
+    content: "";
+    background: url("images/checked.png") no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+ul li span{
+    background: url("images/cross.jpg") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 50;
+    right: 15px;
+    font-size: 20px;
+    border-radius: 50%;
+}
+
+span:hover{
+    opacity: 0.5;
+}
+
+.invalid{
+    display: none;
+    margin: 10px 0 0 20px;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: left;
+}
+
+@media (max-width: 500px){
+    h4{
+        font-size: 35px;
+    }
+    
+    .card{
+        min-width: 300px;
+        padding: 20px;
+    }
+    
+    .search-part input{
+        padding: 15px;
+    }
+    
+    .search-part button{
+        padding: 15px 30px;
+    }
+}
+
+/* scroll-bar type -- research krni ha */
+::-webkit-scrollbar {
+    width: 4px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 2px;
+  }

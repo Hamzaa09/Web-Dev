@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h2>Quiz-Web</h2>
+
+    <div class="card">
+        <h3>Enter Details</h3>
+        <div class="main">
+            <div class="input-box">
+                <input id="name-box" type="text" placeholder="Enter Your Name">
+            </div>
+
+            <div class="input-details">
+                <select id="category">
+                    <option value="Linux">Linux</option>
+                    <option value="Docker">Docker</option>
+                    <option value="SQL">SQL</option>
+                    <option value="CMS">CMS</option>
+                    <option value="Code">Code</option>
+                    <option value="DevOps">DevOps</option>
+                    <option value="React">React</option>
+                    <option value="Laravel">Laravel</option>
+                    <option value="Postgres">Postgres</option>
+                    <option value="Django">Django</option>
+                    <option value="CPanel">CPanel</option>
+                    <option value="Nodejs">Nodejs</option>
+                    <option value="WordPress">WordPress</option>
+                    <option value="Next.js">Next.js</option>
+                    <option value="VueJS">VueJS</option>
+                    <option value="Apache Kafka">Apache Kafka</option>
+                </select>
+
+                <select id="difficulty">
+                    <option value="Easy">Easy</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Hard">Hard</option>
+                </select>
+            </div>
+        </div>
+        <div class="select-btn">
+            <button class="normal-btn" onclick="dataSet()">Start Quiz</button>
+        </div>
+    </div>
+
+    <div class="card-2">
+        <h3>Your scores </h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>Difficulty</th>
+                    <th>Score</th>
+                </tr>
+            </thead>
+            
+            <tbody>
+            </tbody>
+        </table>
+        <a href="index.html"><i class="fa-solid fa-trash" onclick="clearAll()"></i></a>
+    </div>
+
+    <script src="https://kit.fontawesome.com/fb70d785df.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
