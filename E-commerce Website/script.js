@@ -60,6 +60,7 @@ if (addtocart_btn) {
             toast.remove()
         }, 5000)
     })
+    addtocart_btn.removeEventListener();
 }
 
 
